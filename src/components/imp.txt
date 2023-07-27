@@ -1,0 +1,80 @@
+import React, { useState } from 'react';
+import data from '../data.json';
+
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { carousel } = data;
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? carousel.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === carousel.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img
+          src={carousel[currentIndex].image}
+          alt={`Slide ${carousel[currentIndex].id}`}
+          style={{ maxWidth: '300px', maxHeight: '300px' }}
+        />
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        <p>{carousel[currentIndex].caption}</p>
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        <button onClick={handlePrevious}>Previous</button>
+        <span style={{ margin: '0 10px' }}>{carousel[currentIndex].id}</span>
+        <button onClick={handleNext}>Next</button>
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;
+ 
+ --------------------------------------------------------------
+
+ import React, { useState } from 'react';
+import data from '../data.json';
+import '../styles/carousel.css'; // Import the CSS file for styling
+
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const { carousel } = data;
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? carousel.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === carousel.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-cards">
+        {carousel.map((item, index) => (
+          <div
+            key={item.id}
+            className={`carousel-card ${currentIndex === index ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          >
+            <img src={item.image} alt={`Slide ${item.id}`} />
+            <p>{item.caption}</p>
+          </div>
+        ))}
+      </div>
+      <div className="carousel-navigation">
+        <button onClick={handlePrevious}>Previous</button>
+        <span>ID: {carousel[currentIndex].id}</span>
+        <button onClick={handleNext}>Next</button>
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;

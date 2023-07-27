@@ -1,0 +1,102 @@
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    gap: 8rem;
+    /* height: 17.5rem; */
+}
+
+.slogan {
+    color: #FFF;
+    font-family: Karla;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+.hero-image {
+    height: 44.75rem;
+    width: 36.6875rem;
+    z-index: -2;
+}
+
+.other-stuff {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.background2 {
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    z-index: -1;
+}
+
+.about, .info {
+    width: 31.125rem;
+    height: fit-content;
+    border-radius: 2.0625rem;
+    border: 2px solid #FFF;
+    background: #200F25;
+    box-shadow: 8px 10px 11px -1px rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.25rem;
+}
+
+.about-heading, .info-heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-para {
+    color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list-items {
+    color: #C631F3;
+    margin-top: 0.5rem;
+}
+
+.item {
+    font-family: Karla;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.info {
+    margin-top: 5rem;
+}
+
+
+
+

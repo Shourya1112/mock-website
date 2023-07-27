@@ -1,0 +1,24 @@
+{
+    "carousel": [
+        {
+            "id": 1,
+            "image": "/images/group-business-colleagues-suits-as-part-multinational-corporate-team-working-forecasting-trading-corporate-strategy-fund-forex-chart-kuala-lumpur-background-double-exposure-1.png",
+            "caption": "Evolve & Transform to Kick-Ass Sales Performance"
+        },
+        {
+            "id": 2,
+            "image": "/images/medium-shot-smiley-business-man-1.png",
+            "caption": "Selling is Everywhere!"
+        },
+        {
+            "id": 3,
+            "image": "/images/girl-using-interface-modern-technology-digital-layer-effect-as-business-finance-3.png",
+            "caption": "Test Yourself in Sales Action"
+        },
+        {
+            "id": 4,
+            "image": "/images/businessman-hold-graph-arrow-positive-growth-iconpointing-creative-business-chart-with-upward-arrowsfinancial-business-growth-conceptlow-polygonalincreased-sales-increased-value-1.png",
+            "caption": "Evolve & Transform to Kick-Ass Sales Performance"
+        }
+    ]
+}
